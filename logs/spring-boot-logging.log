@@ -1,0 +1,152 @@
+2017-04-25 08:27:17.405  INFO 25982 --- [main] com.epam.app.App                         : Starting App on jacek with PID 25982 (/home/jacek/Desktop/webService/myProject/target/classes started by jacek in /home/jacek/Desktop/webService/myProject)
+2017-04-25 08:27:17.415  INFO 25982 --- [main] com.epam.app.App                         : No active profile set, falling back to default profiles: default
+2017-04-25 08:27:18.140  INFO 25982 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:27:18 CEST 2017]; root of context hierarchy
+2017-04-25 08:27:19.593  INFO 25982 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-25 08:27:19.606  INFO 25982 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-25 08:27:19.607  INFO 25982 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-25 08:27:19.747  INFO 25982 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-25 08:27:19.748  INFO 25982 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1611 ms
+2017-04-25 08:27:19.968  INFO 25982 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-25 08:27:19.968  INFO 25982 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-25 08:27:19.968  INFO 25982 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-25 08:27:19.969  INFO 25982 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-25 08:27:19.970  INFO 25982 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-25 08:27:19.970  INFO 25982 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-25 08:27:20.363  INFO 25982 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:27:18 CEST 2017]; root of context hierarchy
+2017-04-25 08:27:20.486  INFO 25982 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register],methods=[POST],produces=[application/json]}" onto public void com.epam.app.controllers.RegistrationController.register(java.lang.String)
+2017-04-25 08:27:20.490  INFO 25982 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-25 08:27:20.491  INFO 25982 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-25 08:27:20.537  INFO 25982 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:27:20.538  INFO 25982 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:27:20.621  INFO 25982 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:27:20.686  WARN 25982 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-04-25 08:27:21.561  INFO 25982 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 3f9fc148-182f-426b-9db7-e3c1ba59fdb0
+
+2017-04-25 08:27:21.613  INFO 25982 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-04-25 08:27:21.686  INFO 25982 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12aa4996, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d0cc890, org.springframework.security.web.header.HeaderWriterFilter@45d6ef73, org.springframework.security.web.authentication.logout.LogoutFilter@351e414e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c65860d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ff60a8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c4f4365, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18eec010, org.springframework.security.web.session.SessionManagementFilter@5cbd159f, org.springframework.security.web.access.ExceptionTranslationFilter@76c52298, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e31c3ec]
+2017-04-25 08:27:21.818  INFO 25982 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-25 08:27:21.914  INFO 25982 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-25 08:27:21.921  INFO 25982 --- [main] com.epam.app.App                         : Started App in 4.952 seconds (JVM running for 5.593)
+2017-04-25 08:27:21.924  INFO 25982 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35178483: startup date [Tue Apr 25 08:27:21 CEST 2017]; root of context hierarchy
+2017-04-25 08:27:21.998  INFO 25982 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : Ryba pila a pies jadł
+2017-04-25 08:27:21.999  INFO 25982 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an info message
+2017-04-25 08:27:21.999  WARN 25982 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is a warn message
+2017-04-25 08:27:21.999 ERROR 25982 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an error message
+2017-04-25 08:28:43.583  INFO 25982 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:27:18 CEST 2017]; root of context hierarchy
+2017-04-25 08:28:43.593  INFO 25982 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-25 08:28:45.573  INFO 26085 --- [main] com.epam.app.App                         : Starting App on jacek with PID 26085 (/home/jacek/Desktop/webService/myProject/target/classes started by jacek in /home/jacek/Desktop/webService/myProject)
+2017-04-25 08:28:45.580  INFO 26085 --- [main] com.epam.app.App                         : No active profile set, falling back to default profiles: default
+2017-04-25 08:28:46.034  INFO 26085 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:28:46 CEST 2017]; root of context hierarchy
+2017-04-25 08:28:47.556  INFO 26085 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-25 08:28:47.581  INFO 26085 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-25 08:28:47.583  INFO 26085 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-25 08:28:47.716  INFO 26085 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-25 08:28:47.716  INFO 26085 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1690 ms
+2017-04-25 08:28:48.008  INFO 26085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-25 08:28:48.010  INFO 26085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-25 08:28:48.016  INFO 26085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-25 08:28:48.017  INFO 26085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-25 08:28:48.019  INFO 26085 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-25 08:28:48.022  INFO 26085 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-25 08:28:48.511  INFO 26085 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:28:46 CEST 2017]; root of context hierarchy
+2017-04-25 08:28:48.619  INFO 26085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register],methods=[POST],produces=[application/json]}" onto public void com.epam.app.controllers.RegistrationController.register(java.lang.String)
+2017-04-25 08:28:48.624  INFO 26085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-25 08:28:48.624  INFO 26085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-25 08:28:48.683  INFO 26085 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:28:48.683  INFO 26085 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:28:48.766  INFO 26085 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:28:48.815  WARN 26085 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-04-25 08:28:49.489  INFO 26085 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: dd0a29ca-4334-45f1-918d-5443139e4d71
+
+2017-04-25 08:28:49.557  INFO 26085 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-04-25 08:28:49.655  INFO 26085 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18eec010, org.springframework.security.web.context.SecurityContextPersistenceFilter@49293b43, org.springframework.security.web.header.HeaderWriterFilter@3f29e26, org.springframework.security.web.authentication.logout.LogoutFilter@6fd77352, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d000e80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ce4de34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@acf859d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67c119b7, org.springframework.security.web.session.SessionManagementFilter@3b05a99b, org.springframework.security.web.access.ExceptionTranslationFilter@bb9ab64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3157e4c0]
+2017-04-25 08:28:49.808  INFO 26085 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-25 08:28:49.893  INFO 26085 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-25 08:28:49.898  INFO 26085 --- [main] com.epam.app.App                         : Started App in 4.651 seconds (JVM running for 5.336)
+2017-04-25 08:28:49.900  INFO 26085 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@bd1111a: startup date [Tue Apr 25 08:28:49 CEST 2017]; root of context hierarchy
+2017-04-25 08:28:49.937  INFO 26085 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : Ryba pila a pies jadł
+2017-04-25 08:28:49.938  INFO 26085 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an info message
+2017-04-25 08:28:49.938  WARN 26085 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is a warn message
+2017-04-25 08:28:49.938 ERROR 26085 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an error message
+2017-04-25 08:29:12.533  INFO 26085 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:28:46 CEST 2017]; root of context hierarchy
+2017-04-25 08:29:12.538  INFO 26085 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-25 08:29:14.629  INFO 26138 --- [main] com.epam.app.App                         : Starting App on jacek with PID 26138 (/home/jacek/Desktop/webService/myProject/target/classes started by jacek in /home/jacek/Desktop/webService/myProject)
+2017-04-25 08:29:14.640  INFO 26138 --- [main] com.epam.app.App                         : No active profile set, falling back to default profiles: default
+2017-04-25 08:29:15.114  INFO 26138 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:29:15 CEST 2017]; root of context hierarchy
+2017-04-25 08:29:16.614  INFO 26138 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-25 08:29:16.628  INFO 26138 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-25 08:29:16.630  INFO 26138 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-25 08:29:16.732  INFO 26138 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-25 08:29:16.732  INFO 26138 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1620 ms
+2017-04-25 08:29:16.905  INFO 26138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-25 08:29:16.912  INFO 26138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-25 08:29:16.912  INFO 26138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-25 08:29:16.912  INFO 26138 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-25 08:29:16.914  INFO 26138 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-25 08:29:16.914  INFO 26138 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-25 08:29:17.356  INFO 26138 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:29:15 CEST 2017]; root of context hierarchy
+2017-04-25 08:29:17.439  INFO 26138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register],methods=[POST],produces=[application/json]}" onto public void com.epam.app.controllers.RegistrationController.register(java.lang.String)
+2017-04-25 08:29:17.442  INFO 26138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-25 08:29:17.443  INFO 26138 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-25 08:29:17.476  INFO 26138 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:29:17.476  INFO 26138 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:29:17.555  INFO 26138 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:29:17.602  WARN 26138 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-04-25 08:29:18.305  INFO 26138 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: ebddccf9-7899-4af4-8700-8841216f3331
+
+2017-04-25 08:29:18.380  INFO 26138 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-04-25 08:29:18.481  INFO 26138 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43034809, org.springframework.security.web.context.SecurityContextPersistenceFilter@9fec931, org.springframework.security.web.header.HeaderWriterFilter@76c52298, org.springframework.security.web.authentication.logout.LogoutFilter@57a48985, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@78b41097, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b05a99b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67440de6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39e67516, org.springframework.security.web.session.SessionManagementFilter@314c8b4a, org.springframework.security.web.access.ExceptionTranslationFilter@408b87aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f38a289]
+2017-04-25 08:29:18.700  INFO 26138 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-25 08:29:18.771  INFO 26138 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-25 08:29:18.776  INFO 26138 --- [main] com.epam.app.App                         : Started App in 4.523 seconds (JVM running for 5.388)
+2017-04-25 08:29:18.778  INFO 26138 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d96250: startup date [Tue Apr 25 08:29:18 CEST 2017]; root of context hierarchy
+2017-04-25 08:29:18.806  INFO 26138 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : Ryba pila a pies jadł
+2017-04-25 08:29:18.807  INFO 26138 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an info message
+2017-04-25 08:29:18.807  WARN 26138 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is a warn message
+2017-04-25 08:29:18.807 ERROR 26138 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an error message
+2017-04-25 08:32:53.147  INFO 26138 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:29:15 CEST 2017]; root of context hierarchy
+2017-04-25 08:32:53.153  INFO 26138 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-25 08:32:56.679  INFO 26306 --- [main] com.epam.app.App                         : Starting App on jacek with PID 26306 (/home/jacek/Desktop/webService/myProject/target/classes started by jacek in /home/jacek/Desktop/webService/myProject)
+2017-04-25 08:32:56.682  INFO 26306 --- [main] com.epam.app.App                         : No active profile set, falling back to default profiles: default
+2017-04-25 08:32:57.138  INFO 26306 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:32:57 CEST 2017]; root of context hierarchy
+2017-04-25 08:32:58.619  INFO 26306 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-04-25 08:32:58.636  INFO 26306 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-25 08:32:58.637  INFO 26306 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-25 08:32:58.742  INFO 26306 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-25 08:32:58.743  INFO 26306 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1614 ms
+2017-04-25 08:32:58.929  INFO 26306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-25 08:32:58.930  INFO 26306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-25 08:32:58.938  INFO 26306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-25 08:32:58.939  INFO 26306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-25 08:32:58.940  INFO 26306 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-25 08:32:58.940  INFO 26306 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-25 08:32:59.305  INFO 26306 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:32:57 CEST 2017]; root of context hierarchy
+2017-04-25 08:32:59.417  INFO 26306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register],methods=[POST],produces=[application/json]}" onto public void com.epam.app.controllers.RegistrationController.register(java.lang.String)
+2017-04-25 08:32:59.420  INFO 26306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-25 08:32:59.421  INFO 26306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-25 08:32:59.454  INFO 26306 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:32:59.454  INFO 26306 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:32:59.499  INFO 26306 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-25 08:32:59.540  WARN 26306 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-04-25 08:33:00.551  INFO 26306 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: b0c48d21-3765-433c-a412-4723393acc3c
+
+2017-04-25 08:33:00.659  INFO 26306 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-04-25 08:33:00.841  INFO 26306 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18eec010, org.springframework.security.web.context.SecurityContextPersistenceFilter@49293b43, org.springframework.security.web.header.HeaderWriterFilter@3f29e26, org.springframework.security.web.authentication.logout.LogoutFilter@6fd77352, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d000e80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ce4de34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@acf859d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67c119b7, org.springframework.security.web.session.SessionManagementFilter@3b05a99b, org.springframework.security.web.access.ExceptionTranslationFilter@bb9ab64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3157e4c0]
+2017-04-25 08:33:00.958  INFO 26306 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-25 08:33:01.009  INFO 26306 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-04-25 08:33:01.014  INFO 26306 --- [main] com.epam.app.App                         : Started App in 4.826 seconds (JVM running for 5.464)
+2017-04-25 08:33:01.016  INFO 26306 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@bd1111a: startup date [Tue Apr 25 08:33:01 CEST 2017]; root of context hierarchy
+2017-04-25 08:33:01.070  INFO 26306 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : Ryba pila a pies jadł
+2017-04-25 08:33:01.070  INFO 26306 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an info message
+2017-04-25 08:33:01.070  WARN 26306 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is a warn message
+2017-04-25 08:33:01.070 ERROR 26306 --- [main] com.epam.app.beans.impl.SimpleBeanImpl        : This is an error message
+2017-04-25 08:35:57.102  INFO 26306 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6166e06f: startup date [Tue Apr 25 08:32:57 CEST 2017]; root of context hierarchy
+2017-04-25 08:35:57.105  INFO 26306 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
